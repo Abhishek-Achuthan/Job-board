@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./index.css">
+  <title>Job board</title>
+
+</head>
+
+<body>
+  <h1>Jobs</h1>
+  <main>
+    <nav class="tabs">
+      <button type="button" id='available-tab' class="tab-button active">
+        Available Jobs
+      </button>
+      <button type="button" id="saved-tab" class="tab-button">
+        Saved Jobs
+      </button>
+    </nav>
+    <section id="available-section">
+      <input id="search" placeholder="Search by title, company or place" />
+      <ul id="jobs"></ul>
+    </section>
+    <section id="saved-section" hidden>
+      <ul id="saved-jobs"></ul>
+    </section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+
+</html>
